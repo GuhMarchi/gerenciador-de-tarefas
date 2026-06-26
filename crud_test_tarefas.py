@@ -66,28 +66,27 @@ def salvar_tarefas():
 while True:
     print("1 - Adicionar tarefa")
     print("2 - Listar Tarefas")
-    print("3 - sair")
-    print("4 - Concluir Tarefa")
-    print("5 - Deletar Tarefas")
-    print("6 - Savar Tarefas")
-    
+    print("3 - Concluir Tarefa")
+    print("4 - Deletar Tarefas")
+    print("5 - Salvar Tarefas")
+    print("6 - Sair")
+
     opcao = input("Escolha uma Opcao de 1 a 6 :")
     if opcao == "1":
         adicinar_terefas()
     elif opcao == "2":
         listar_tarefas()
-    elif opcao == "3":    
+    elif opcao == "3":
+        concluir_tarefa()
+    elif opcao == "4":
+        deletar_terefas()
+    elif opcao == "5":
+        salvar_tarefas()
+    elif opcao == "6":
         salvar_tarefas()
         conexao.close()
         print("saindo")
         break
-    elif opcao == "4":
-        concluir_tarefa()
-    elif opcao == "5":
-        deletar_terefas()
-    elif opcao == "6":
-        salvar_tarefas()
-       
     else:
         print("Opcao invalida!!!")
     
